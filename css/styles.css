@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* --------------VARIABLES----------------------- */
+--brightOrange: hsl(31, 77%, 52%);
+--darkCyan: hsl(184, 100%, 22%);
+--veryDarkCyan: hsl(179, 100%, 13%);
+--primaryColor: hsla(0, 0%, 100%, 0.75);
+--secondaryColor: hsl(0, 0%, 95%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.main_box {
+    margin: 9% 10%;
+    padding: 5% 10%;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    box-sizing: border-box;
+    box-shadow: 4px 3px 2px 1px #828282;
+    border-radius: 1%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.card {
+    padding: 5%;
+    color: white;
+}
+
+.card_image {
+    padding-bottom: 9%;
+}
+
+.card_title {
+    padding-bottom: 12%;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.card_content {
+    padding-bottom: 30%;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn {
+    background-color: white;
+    border: .5px solid white;
+    border-radius: 20px;
+    width: 65%;
+    padding: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.one button {
+    color: hsl(31, 77%, 52%);
+}
+
+.two button {
+    color: hsl(184, 100%, 22%);
+}
+
+.three button {
+    color: hsl(179, 100%, 13%);
+}
+
+.one button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.two button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.three button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    
+    .main_box {
+        padding: 0;
+        box-shadow: none;
+    }
+    
+    .container {
+        display: block;
+        border-radius: 0;
+    }
+
+    .card {
+        padding: 10%;
+        border-radius: 0;
+    }
+
+    .one {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .three {
+        border-radius: 0 0 10px 10px;
+    }
+}
